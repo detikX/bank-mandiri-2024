@@ -1,11 +1,20 @@
 .data {
-    .gambar {
+    .data-all {
         display: inline-block;
-        position: relative;
-        width: 320px;
-        height: 320px;
+        width: 280px;
+        margin: 0 24px;
+        vertical-align: top;
         @media screen and (max-width:768px) {
             width: 165px;
+            margin: 0 8px;
+        }
+    }
+    .gambar {
+        width: 100%;
+        position: relative;
+        height: 280px;
+        @media screen and (max-width:768px) {
+            // width: 165px;
             height: 165px;
 
         }
@@ -85,6 +94,13 @@
                 width: 40px;
             }
         }
+        &--diagram {
+            position: absolute;
+            top: -16px;
+            right: 8px;
+            width: 40%;
+            height: auto;
+        }
         &--badan {
             position: absolute;
             top: 0;
@@ -110,6 +126,9 @@
             width: 75px;
             height: auto;
             z-index: 3;
+            @media screen and (max-width:768px) {
+                width: 40px;
+            }
         }
         &--badan-hitam {
             position: absolute;
@@ -124,6 +143,10 @@
             left: -8px;
             width: 40px;
             height: auto;
+            @media screen and (max-width:768px) {
+                width: 25px;
+                top: -20px;
+            }
         }
         &--monitor {
             position: absolute;
@@ -136,17 +159,50 @@
     }
 
     .keterangan {
-        display: inline-block;
-        width: 50%;
-        margin-left: 8px;
+        // display: inline-block;
+        // width: 50%;
+        // margin-left: 8px;
+        margin-top: 16px;
         .judul {
-            font-size: 2rem;
+            font-size: 1.5rem;
             // font-weight: 700;
+            @media screen and (max-width:768px) {
+                font-size: 1.5rem;
+            }
         }
         .nominal {
             font-size: 3rem;
             font-weight: 700;
+            line-height: 2.5rem;
             color: #003a70;
+            @media screen and (max-width:768px) {
+                line-height: 1.5rem;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .pencapaian {
+        margin-bottom: 16px;
+        .gam {
+            width: 50%;
+            display: inline-block;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .cont {
+            display: inline-block;
+            vertical-align: middle;
+            width: 45%;
+            &--angka {
+                font-size: 1.5rem;
+                line-height: 1rem;
+                font-weight: bold;
+            }
         }
     }
 }
