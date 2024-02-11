@@ -102,4 +102,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (max-width:768px) {
+        min-height: 200px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #b9e7f2;
+        background-size: contain;
+    }
   }
