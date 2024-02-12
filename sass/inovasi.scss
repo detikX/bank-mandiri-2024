@@ -23,6 +23,8 @@
             display: inline-block;
             width: 40%;
             height: auto;
+            position: relative;
+            z-index: 2;
             img {
                 width: 100%;
                 height: 100%;
@@ -31,7 +33,23 @@
         }
         .cont {
             display: inline-block;
-            width: 55%;
+            margin-left: -32px;
+            background: rgba(255,255,255,.6);
+            padding: 8px 8px 8px 36px;
+            border-radius: 16px;
+            position: relative;
+            width: 66%;
+            z-index: 1;
+            @media screen and (max-width:768px) {
+                
+                width: 60%;
+            }
+
+            .d-block {
+                // margin-top: 8px;
+                // border-top: 1px solid ;
+                padding-top: 8px;
+            }
             .judul {
                 font-size: 1rem;
             }
@@ -40,6 +58,22 @@
                 line-height: 2.2rem;
                 font-weight: 700;
                 color: #003a70;
+            }
+
+            small {
+                display: inline-block;
+                font-size: 1rem;
+            }
+
+            .markup {
+                width: 20px;
+                display: inline-block;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
             }
         }
     }
