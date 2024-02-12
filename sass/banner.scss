@@ -28,14 +28,52 @@
             object-fit: contain;
         }
     }
+
+    @keyframes MoveUpDown {
+        0% {
+          bottom: 6vh;
+          opacity: 1;
+        }
+        20% {
+            bottom: 6vh;
+          opacity: 1;
+        }
+        30% {
+            bottom: 6vh;
+             opacity: 1;
+        }
+        50% {
+            bottom: 10vh;
+            opacity: 1;
+        }
+        70% {
+            bottom: 16vh;
+          opacity: 1;
+        }
+        100% {
+            bottom: 6vh;
+            opacity: 1;
+        }
+      }
     .belakang {
         position: absolute;
-        bottom: 16vh;
+        opacity: 0;
         left: 0;
         right: 0;
         width: auto;
         height: 66%;
+        // width: 150px;
+        // height: auto;
         z-index: 2;
+        animation: MoveUpDown 3s linear infinite;
+        bottom: 6vh;
+        &-one {
+        }
+        &-two {
+            animation: MoveUpDown 3s linear infinite;
+            bottom: 10vh;
+            left: 50%;
+        }
         @media screen and (max-width:768px) {
             bottom: 8vh;
         }

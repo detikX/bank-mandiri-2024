@@ -11,4 +11,59 @@
             object-fit: contain;
         }
     }
+
+    .hello {
+        position: relative;
+        margin-bottom: 24px;
+        .content {
+            padding: 16px 0;
+            position: relative;
+        }
+    }
+    .imgs {
+        position: absolute;
+        width: 150px;
+        top: 45%;
+        height: 150px;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .conetents {
+        // display: inline-block;
+        // text-align: center;
+        padding: 0 16px 16px 135px;
+        // width: 60%;
+        .judul {
+            font-size: 1.2rem;
+            // font-weight: bold;
+        }
+        .angka{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #003a70;
+            @media screen and (max-width:768px) {
+                font-size: 2rem;
+            }
+        }
+        .imgup {
+            width: 20px;
+            height: auto;
+            display: inline-block;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit:contain;
+            }
+        }
+        .an {
+            display: inline-block;
+            margin-left: 8px;
+            font-size: 1rem;
+        }
+    }
 }
