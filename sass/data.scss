@@ -121,7 +121,20 @@
                 left: -56px;
                 top: 5px;
             }
-          }
+        }
+
+        @keyframes tangansmob {
+            0%, 100% {
+              transform: rotate(0deg);
+              left: -27px;
+            top: 2px;
+            }
+            50% {
+                transform: rotate(-10deg);
+                left: -29px;
+                top: 5px;
+            }
+        }
         &--tangan {
             position: absolute;
             left: -54px;
@@ -133,6 +146,7 @@
             @media screen and (max-width:768px) {
                 width: 30px;
                 left: -27px;
+                animation: tangansmob 2s linear infinite;
             }
         }
         &--hitam {
