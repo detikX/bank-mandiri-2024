@@ -112,6 +112,12 @@
             border-radius: 16px;
             margin: -20px 0 0 -100px;
             padding: 2px;
+            @media screen and (max-width:360px) {
+                right: 25% !important;
+            }
+            @media screen and (max-width:768px) {
+                right: 28%;
+            }
         }
         #loading{
             transition: all 500ms ease;
