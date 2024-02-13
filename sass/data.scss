@@ -22,6 +22,9 @@
             width: 150px;
             margin: 0 8px;
         }
+        @media screen and (max-width:360px) {
+            width: 140px;
+        }
     }
     .gambar {
         width: 100%;

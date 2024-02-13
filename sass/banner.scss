@@ -76,7 +76,7 @@
             opacity: 1;
         }
         70% {
-            bottom: 16vh;
+            bottom: 14vh;
           opacity: 1;
         }
         100% {
@@ -120,6 +120,16 @@
         width: 100%;
         transform: translate(-50%,-50%);
         text-align: center;
+        @media screen and (max-width:768px) {
+            position: absolute;
+    left: 50%;
+    top: 30%;
+    z-index: 2;
+    width: 100%;
+    transform: translate(-50%, -50%) rotate(-26deg);
+    text-align: left;
+
+        }
         h2 {
             font-size: 3rem;
             line-height: 2.8rem;

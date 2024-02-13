@@ -38,16 +38,22 @@
         // text-align: center;
         padding: 0 16px 16px 135px;
         // width: 60%;
+        @media screen and (max-width:768px) {
+            padding: 0 16px 16px 120px;
+        }
         .judul {
             font-size: 1.2rem;
             // font-weight: bold;
+            @media screen and (max-width:768px) {
+                font-size: 1rem;
+            }
         }
         .angka{
             font-size: 2.5rem;
             font-weight: 700;
             color: #003a70;
             @media screen and (max-width:768px) {
-                font-size: 2rem;
+                font-size: 1.7rem;
             }
         }
         .imgup {
