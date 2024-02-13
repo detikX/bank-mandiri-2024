@@ -1,0 +1,145 @@
+.apresiasi {
+    // background: linear-gradient(to top, #003a70, #b9e7f2);
+    .bg-lingkaran {
+        position: absolute;
+        // right: 0;
+        // top: 0;
+        // bottom: 0;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+
+    .judul-block {
+        // background: #003a70;
+        width: fit-content;
+        margin: 0 auto 32px;
+        position: relative;
+        // padding: 8px 16px;
+        border-radius: 16px;
+        text-align: center;
+        @keyframes dash {
+            100% {
+                background-position: 100% 0%,0% 100%,0% 0%,100% 100%;
+            }
+        }
+        span {
+            position: absolute;
+            left: 50%;
+            width: 60%;
+            height: 2px;
+            bottom: -35%;
+            transform: translate(-50%,-50%);
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -5px;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, #a58251 50%, transparent 50%),linear-gradient(90deg, #a58251 50%, transparent 50%),linear-gradient(0deg, #a58251 50%, transparent 50%),linear-gradient(0deg, #a58251 50%, transparent 50%);
+                background-size: 8px 1px,0px 1px,0px 1px,0px 1px;
+                background-position: 0% 0%,100% 100%,0% 100%,100% 0px;
+                animation: dash 50s linear infinite;
+            
+            }
+
+        }
+        h3 {
+            color: #003a70;
+            font-size: 2.2rem;
+            // font-weight: 400;
+        }
+    }
+
+    .wrap-semua {
+        display: block;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin: 32px 0;
+        .width-logo {
+            width: 20%;
+            display: inline-block;
+            height: auto;
+            margin: 24px 52px;
+            @media screen and (max-width:768px) {
+                width: 75%;
+            }
+        }
+
+        .logonya {
+            width: 180px;
+            height: 120px;
+            padding:  8px;
+            border-radius: 16px 16px 0 0;
+            background: linear-gradient(45deg, rgba(white,.8), rgba(white,.4));
+            margin: 0 auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .logox {
+            position: relative;
+            padding: 8px;
+            text-align: center;
+            // background-color: #875e46;
+            background-color: #003a70;
+            color: #fff;
+            font-size: 1rem;
+            font-style: italic;
+            font-family: "Poppins",sans-serif;
+            ol {
+                list-style-type: none;
+                text-align: left;
+                padding: 0;
+                margin: 0;
+                li {
+                    font-size: .8rem;
+                }
+            }
+            &::before,&::after {
+                content: '';
+                width: 60px;
+                height: 100%;
+                // background-color: #724b34;
+                background-color: #0c5497;
+              
+                /* position ribbon ends behind and slightly lower */
+                position: absolute;
+                z-index: -1;
+                top: 20px;
+                
+                /* clip ribbon end shape */
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+              
+                /* draw and position the folded ribbon bit */
+                background-image: linear-gradient(45deg, transparent 50%, #1b7bd2 50%);
+                background-size: 20px 20px;
+                background-repeat: no-repeat;
+                background-position: bottom right;
+            }
+    
+            &::before {
+                left: -40px;
+            }
+            &::after {
+                right: -40px;
+                transform: scaleX(-1);
+            }
+        }
+    }
+}

@@ -1,4 +1,24 @@
 .opening {
+    
+    .lingkaran {
+        position: absolute;
+        // width: 200px;
+        // height: 200px;
+        border-radius: 50%;
+        background: rgba(#e7f4f7,.6);
+        
+        &-gede {
+            width: 250px;
+            height: 250px;
+            top: 15%;
+            right: -10%;
+            @media screen and (max-width:768px) {
+                right: -20%;
+                width: 175px;
+                height: 175px;
+            }
+        }
+    }
     position: relative;
     margin-top: -5%;
     min-height: auto;
@@ -106,23 +126,3 @@
 //     </g>
 // </svg>
 // </div>
-
-.lingkaran {
-    position: absolute;
-    // width: 200px;
-    // height: 200px;
-    border-radius: 50%;
-    background: rgba(#e7f4f7,.6);
-    
-    &-gede {
-        width: 250px;
-        height: 250px;
-        top: 15%;
-        right: -10%;
-        @media screen and (max-width:768px) {
-            right: -20%;
-            width: 175px;
-            height: 175px;
-        }
-    }
-}
