@@ -84,6 +84,33 @@
             opacity: 1;
         }
       }
+
+      @keyframes MoveUpDownMob {
+        0% {
+          bottom: 0vh;
+          opacity: 1;
+        }
+        20% {
+            bottom: 0vh;
+          opacity: 1;
+        }
+        30% {
+            bottom: 0vh;
+             opacity: 1;
+        }
+        50% {
+            bottom: 3vh;
+            opacity: 1;
+        }
+        70% {
+            bottom: 6vh;
+          opacity: 1;
+        }
+        100% {
+            bottom: 0vh;
+            opacity: 1;
+        }
+      }
     .belakang {
         position: absolute;
         opacity: 0;
@@ -96,6 +123,10 @@
         z-index: 2;
         animation: MoveUpDown 5s linear infinite;
         bottom: 6vh;
+        @media screen and (max-width:768px) {
+            animation: MoveUpDownMob 3s linear infinite;
+        }
+
         &-one {
         }
         &-two {
