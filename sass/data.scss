@@ -14,14 +14,17 @@
     &::before {
         content: "";
         position: absolute;
-        border-radius: 0 0 50px 50px ;
+        border-radius: 0 0 50px 50px;
         top: 0;
         z-index: 2;
         left: 0;
+        background-size: cover;
         right: 0;
         width: 100%;
         height: 30px;
-        background: white;
+        background-image: url(../img/kertas.jpg);
+        background-position: bottom;
+        background-size: cover;
         box-shadow: 12px 16px 15px 10px rgba(0,0,0,.1);
     }
     .data-all {
@@ -249,8 +252,22 @@
                 font-size: 1.1rem;
             }
         }
+        @keyframes bg {
+            0%, 100% {
+                
+                background: transparent;
+              
+            }
+            50% {
+                    background: linear-gradient(to right, white, transparent);
+            }
+          }
         .nominal {
             font-size: 3rem;
+            // animation: bg 2s linear infinite;
+            // transition-timing-function: ease-in-out;
+                background: transparent;
+            // transition: .3s;
             font-weight: 700;
             line-height: 2.5rem;
             color: #003a70;
