@@ -1,9 +1,10 @@
 .inovasi {
     // background: #86b2db;
     background: #86b2db;
+    
     .batasx {
         position: absolute;
-        top: -5%;
+        top: -4%;
         /* right: 0; */
         /* left: 0; */
         width: fit-content;
@@ -222,5 +223,17 @@
         background-repeat: no-repeat;
         background-color: #b9e7f2;
         background-size: contain;
+    }
+  }
+
+  .bg-pol {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
   }
