@@ -11,11 +11,43 @@
             object-fit: cover;
         }
     }
+    @keyframes woww {
+        0% {
+          top: 10%;
+          opacity: 0;
+        }
+        10% {
+            top: 10%;
+            opacity: .5;
+        }
+        50% {
+          top: 5%;
+          opacity: 1;
+        }
+        70% {
+            top: 5%;
+            opacity: 1;
+          }
+          80% {
+            top: 5%;
+            opacity: .5;
+          }
+          90% {
+            top: 5%;
+            opacity: 0;
+          }
+        100% {
+            top: 0;
+            opacity: 0;
+        }
+      }
     .meriah {
         position: absolute;
-        top: 0;
+        top: 10%;
+        animation: woww 2s linear infinite;
+        opacity: 0;
         left: 50%;
-        opacity: .8;
+        // opacity: .8;
         transform: translate(-50%,0);
         right: 0;
         width: 60%;
