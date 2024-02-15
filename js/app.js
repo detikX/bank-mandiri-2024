@@ -10,7 +10,7 @@ $("section h3").attr({ "data-aos": "zoom-in", "data-aos-delay": "100", "data-aos
 
 $("section .hp, section .pencapaian").attr({ "data-aos": "zoom-in", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
 
-$(".inovasi img, #progressbar").attr({ "data-aos": "zoom-in", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+$(".inovasi .bg, #progressbar").attr({ "data-aos": "zoom-in", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
 
 $("section .cont").attr({ "data-aos": "fade-in", "data-aos-delay": "500", "data-aos-duration": "500", "data-aos-offset": "10", "data-aos-easing": "linear" })
 
