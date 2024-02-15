@@ -10,6 +10,12 @@
         width: fit-content;
         height: 100px;
         z-index: 1;
+        &.rightx {
+            right: 0;
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+        }
         @media screen and (max-width:768px) {
             top: -3%;
         }
