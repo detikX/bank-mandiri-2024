@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 
 //maen aos
-$("section p, section .pencapaian").attr({ "data-aos": "fade-up", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+$("section p,section .nominal, section .pencapaian").attr({ "data-aos": "fade-up", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
 $("section h3").attr({ "data-aos": "zoom-in", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" });
 
 $("section .hp, section .pencapaian").attr({ "data-aos": "zoom-in", "data-aos-delay": "100", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
