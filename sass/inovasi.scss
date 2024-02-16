@@ -4,7 +4,7 @@
     
     .batasx {
         position: absolute;
-        top: -4%;
+        top: -3%;
         /* right: 0; */
         /* left: 0; */
         width: fit-content;
@@ -243,3 +243,29 @@
         object-fit: cover;
     }
   }
+
+  @keyframes ups{
+    0%,100%{
+      margin-top: 0px;
+    }
+    50%{
+      margin-top: 4px;
+    }
+}
+
+  .markup {
+    width: 20px;
+    margin-top: 0;
+    display: inline-block;
+    // animation: ups 1.2s linear infinite;
+    height: auto;
+    vertical-align: middle;
+    &.rot {
+        transform: rotate(180deg);
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
